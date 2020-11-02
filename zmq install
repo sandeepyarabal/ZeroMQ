@@ -42,3 +42,14 @@ $ cmake -H. -Bbuild
 $ cmake --build build -- -j3
 cd build
 ./demo
+
+
+python 
+
+sudo apt install python-pip
+pip install pyzmq
+
+then go to zguide program examples for pthon
+python hwserver.py
+open another terminal
+python hwclient.py
