@@ -1,0 +1,17 @@
+intall virtual box
+
+install Ubantu
+
+how to make internet work in ubantu
+
+Open Virtualbox Manager
+Select the machine you cannot get internet on in the left pane
+Click the Settings button in the top menu
+Click Network in the left pane in the settings window
+Switched to Bridged Adapter in the Attached to drop-down menu
+Select the name of the network adapter you are currently using on your host machine. I am using wireless so I chose eth0 which is my wireless network adapter. You can check which adapter you are currently using by opening the terminal (CTRL+ALT+T by default) and running ifconfig. It will probably be the eth adapter that shows an inet addr and shows data transfer next to RX bytes.
+Under Advanced, make sure the machine is using the Desktop Adapter Type
+Under Advanced, make sure Promiscuous Mode is set to Allow All
+Under Advanced, make sure Cable connected is checked on
+Hit OK to save your changes
+Start your VM
