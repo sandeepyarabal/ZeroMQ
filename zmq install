@@ -1,0 +1,44 @@
+
+for examples code zguide
+
+sudo apt-get install libzmq3-dev
+sudo ldconfig ( fro pthered error)
+git clone --depth=1 https://github.com/imatix/zguide.git
+cd zguide
+cd examples
+cd C++
+./build all
+
+
+
+
+libzmq install via cmake
+
+git clone https://github.com/zeromq/libzmq
+mkdir cmake-build && cd cmake-build
+cmake ../libzmq && make -j 4
+make test && make install && sudo ldconfig
+
+
+cppzmq
+
+git clone https://github.com/zeromq/cppzmq.git
+
+cd to cppzmq
+mkdir build
+cd build
+cmake -DCPPZMQ_BUILD_TESTS=OFF ..
+sudo make -j4 install
+
+sudo apt install curl
+
+./ci_build.sh 
+
+comment out error if u get in test/cmakelists.txt file
+#catch_discover_tests(unit_tests)
+
+cd demo
+$ cmake -H. -Bbuild
+$ cmake --build build -- -j3
+cd build
+./demo
