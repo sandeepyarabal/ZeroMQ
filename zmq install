@@ -53,3 +53,24 @@ then go to zguide program examples for pthon
 python hwserver.py
 open another terminal
 python hwclient.py
+
+
+majordomo install
+git clone https://github.com/zeromq/majordomo.git
+sudo apt-get update 
+sudo apt-get install -y pkg-config
+sudo apt-get install build-essential
+sudo apt-get install libtool-bin
+sudo apt-get install autotools-dev
+sudo apt-get install autoconf
+sudo apt-get install libzmq3-dev
+sudo apt-get install libczmq-dev
+
+./autogen.sh
+./configure
+make
+make install
+
+cd src
+./mdtest
+
