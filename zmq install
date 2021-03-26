@@ -55,6 +55,12 @@ open another terminal
 python hwclient.py
 
 
+in windows
+get-pip.py download and execute
+install pip 
+pip install pyzmq (if gives ssl error next step from cmd prompt)
+pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org
+
 majordomo install
 git clone https://github.com/zeromq/majordomo.git
 sudo apt-get update 
